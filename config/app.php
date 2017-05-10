@@ -12,7 +12,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'DieWebDev Code',
+    'name' => 'DieWebDev Code - o blog do desenvolvedor web',
 
     /*
     |--------------------------------------------------------------------------

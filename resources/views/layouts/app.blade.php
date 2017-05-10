@@ -8,7 +8,8 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'DieWebDev - O blog do Desenvolvedor Web') }}</title>
+    <meta name=”keywords” content=”blog, programação, programacao, web, php, laravel, laravel 5, css, framework, mvc, eloquent” >
 
     <!-- Styles -->
     <link href="/semantic/semantic.css" rel="stylesheet">
