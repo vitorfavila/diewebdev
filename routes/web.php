@@ -26,8 +26,8 @@ Route::get('/about', function() {
 Route::group(['middleware' => 'auth'], function () {
 	Route::get('/posts', 'PostController@index')->name('post.index');
     Route::get('/post/create', 'PostController@create')->name('post.create');
-    Route::post('/post', 'PostController@store')->name('post.store');
-    Route::get('/post/{post_id}/edit', 'PostController@edit')->name('post.edit');
+    Route::post('/post/{post?}', 'PostController@store')->name('post.store');
+    Route::get('/post/{post}/edit', 'PostController@edit')->name('post.edit');
     Route::get('/post/{post}/disable', 'PostController@disable')->name('post.disable');
 });
 

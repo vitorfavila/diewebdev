@@ -15,7 +15,7 @@
     <link href="/css/app.css" rel="stylesheet">
     <link href="/semantic/components/dropdown.css" rel="stylesheet">
     <link href="/semantic/components/menu.css" rel="stylesheet">
-    <link href="/css/prism.css" rel="stylesheet">
+    <link href="/css/atelier-savanna-dark.css" rel="stylesheet">
 
     <!-- Scripts -->
     <script>
@@ -87,6 +87,8 @@
     <script src="/js/app.js"></script>
     <script src="/semantic/semantic.js"></script>
     <script src="/semantic/components/dropdown.js"></script>
-    <script src="/js/prism.js"></script>
+    <!-- Syntax Highlighter -->
+    <script src="/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>

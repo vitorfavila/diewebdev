@@ -15,6 +15,6 @@ require('laravel-elixir-vue');
 
 elixir(mix => {
     mix.sass('app.scss')
-       .webpack('app.js')
-       .webpack('components/prism.js');
+       .webpack('app.js');
+       // .webpack('components/jquery.syntaxhighlighter.min.js');
 });

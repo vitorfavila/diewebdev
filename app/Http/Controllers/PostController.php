@@ -52,8 +52,18 @@ class PostController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Post $post)
     {
+        if ($post) {
+            $post->title = request('title');
+            $post->subtitle = request('subtitle');
+            $post->slug = str_slug(request('title'), '-');
+            $post->content = request('content');
+            $post->save();
+
+            return redirect()->route('post.index');
+        }
+
         $post = Post::create([
             'title' => $request->title,
             'subtitle' => $request->subtitle,
@@ -62,7 +72,7 @@ class PostController extends Controller
             'user_id' => Auth::user()->id,
         ]);
 
-        dd($post);
+        return redirect()->route('post.index');
     }
 
     /**
@@ -82,9 +92,9 @@ class PostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Post $post)
     {
-        //
+        return view('post.create', ['post' => $post]);
     }
 
     /**
