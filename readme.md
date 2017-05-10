@@ -1,6 +1,6 @@
 # DieWebDev Code - BLOG
 
-DieWebDev is a blog for web developeres based on Brazil. This blog is built on Laravel Framework 5.3 and is under permanent development.
+DieWebDev is a blog for web developeres based on Brazil. This blog is built on Laravel Framework v5.4 and is under permanent development.
 
 ## About Laravel
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.

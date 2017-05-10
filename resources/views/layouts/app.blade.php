@@ -16,6 +16,7 @@
     <link href="/semantic/components/dropdown.css" rel="stylesheet">
     <link href="/semantic/components/menu.css" rel="stylesheet">
     <link href="/css/railscasts.css" rel="stylesheet">
+    {{-- <link href="/css/zenburn.css" rel="stylesheet"> --}}
 
     <!-- Scripts -->
     <script>

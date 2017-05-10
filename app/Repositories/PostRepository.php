@@ -10,12 +10,12 @@ class PostRepository
 {
     public function all()
     {
-        return Post::active()->orderBy('created_at', 'desc')->get();
+        return Post::active()->with('user', 'categories')->orderBy('created_at', 'desc')->get();
     }
 
     public function postedIn($category_name)
     {
         $category = Category::where('name', $category_name)->first();
-        return $category->posts()->active()->orderBy('created_at', 'desc')->get();
+        return $category->posts()->active()->with('user', 'categories')->orderBy('created_at', 'desc')->get();
     }
 }
