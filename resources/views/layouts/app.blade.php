@@ -27,6 +27,7 @@
 </head>
 <body>
     @include('layouts.navbar')
+    @include('partial.analytics')
 
     <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
         {{ csrf_field() }}
