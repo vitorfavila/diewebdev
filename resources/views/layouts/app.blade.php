@@ -15,7 +15,7 @@
     <link href="/css/app.css" rel="stylesheet">
     <link href="/semantic/components/dropdown.css" rel="stylesheet">
     <link href="/semantic/components/menu.css" rel="stylesheet">
-    <link href="/css/atelier-savanna-dark.css" rel="stylesheet">
+    <link href="/css/railscasts.css" rel="stylesheet">
 
     <!-- Scripts -->
     <script>
@@ -46,13 +46,13 @@
                             <div class="item">
                                 <i class="angle double right icon"></i>
                                 <div class="content">
-                                    <a href="https://laravel.com/docs/5.3/releases">Laravel 5.3 Release Notes</a>
+                                    <a href="https://laravel.com/docs/5.4/releases" target="_blank">Laravel 5.4 Release Notes <i class="external small icon"></i></a>
                                 </div>
                             </div>
                             <div class="item">
                                 <i class="angle double right icon"></i>
                                 <div class="content">
-                                    <a href="http://coffeescript.org/#overview">Já viu CoffeScript?</a>
+                                    <a href="http://coffeescript.org/#overview" target="_blank">Já viu CoffeScript? <i class="external small icon"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -63,7 +63,7 @@
                             <div class="item">
                                 <i class="angle double right icon"></i>
                                 <div class="content">
-                                    Em breve estarei disponibilizando comentários no blog
+                                    Em breve estarei disponibilizando comentários nas postagens
                                 </div>
                             </div>
                             <div class="item">
@@ -75,9 +75,9 @@
                         </div>
 
                     </div>
-                    <div class="ui segment">
+                    {{-- <div class="ui segment">
                         <img class="ui fluid image" src="img/image.png">
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>
