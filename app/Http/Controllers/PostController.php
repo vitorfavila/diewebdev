@@ -55,8 +55,8 @@ class PostController extends Controller
     public function store(Post $post = null)
     {
         if ($post) {
-            $post->title = request('title');
-            $post->subtitle = request('subtitle');
+            $post->title = trim(request('title'));
+            $post->subtitle = trim(request('subtitle'));
             $post->slug = str_slug(request('title'), '-');
             $post->content = request('content');
             $post->user_id = Auth::user()->id;

@@ -14,7 +14,7 @@
                     @endforelse
                 </h3>
                 <h2 class="ui left floated header">
-                    <a href="{{ route('post.show', $post->slug) }}">{{$post->title}}</a>
+                    <a href="{{ route('post.show', $post->slug) }}"> {{ $post->title }} </a>
                     <div class="sub header" style="margin-top: 12px">
                         Por {{$post->user->name}} | Em {{$post->created_at->format('d/m/Y')}} | Última atualização {{$post->updated_at->format('d/m/Y H:i')}}
                         @if (Auth::check())
