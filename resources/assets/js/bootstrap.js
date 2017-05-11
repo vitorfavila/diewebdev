@@ -7,7 +7,7 @@
  * code may be modified to fit the specific needs of your application.
  */
 
-// window.$ = window.jQuery = require('jquery');
+window.$ = window.jQuery = require('jquery');
 // require('bootstrap-sass');
 
 /**
@@ -38,6 +38,8 @@
  */
 
 // import Echo from "laravel-echo"
+// import 'semantic-ui/dist/semantic'
+// import 'semantic-ui/dist/components/dropdown'
 
 // window.Echo = new Echo({
 //     broadcaster: 'pusher',

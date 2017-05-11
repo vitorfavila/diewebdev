@@ -10,6 +10,7 @@
 
     <title>{{ config('app.name', 'DieWebDev - O blog do Desenvolvedor Web') }}</title>
     <meta name=”keywords” content=”blog, programação, programacao, web, php, laravel, laravel 5, css, framework, mvc, eloquent” >
+    <meta name="description" content="Blog do Desenvolvedor WEB">
 
     <!-- Styles -->
     <link href="/semantic/semantic.css" rel="stylesheet">
@@ -93,5 +94,8 @@
     <!-- Syntax Highlighter -->
     <script src="/js/highlight.pack.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
+    <script type="text/javascript">
+        $('.ui.checkbox').checkbox();
+    </script>
 </body>
 </html>

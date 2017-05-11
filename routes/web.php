@@ -14,7 +14,10 @@
     // return view('welcome');
 // });
 
-Auth::routes();
+// Auth::routes();
+Route::get('/login', 'Auth\LoginController@showLoginForm')->name('login');
+Route::post('/login', 'Auth\LoginController@login')->name('login.do');
+Route::post('/logout', 'Auth\LoginController@logout')->name('logout');
 
 Route::get('/', 'PostController@index');
 Route::get('/posts/category/{category_name}', 'PostController@index')->name('posts.category');
