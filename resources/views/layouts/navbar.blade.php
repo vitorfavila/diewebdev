@@ -2,24 +2,20 @@
     <div class="item">
         <a href="{{ url('/') }}"><img class="ui image" src="/img/dwd_logo.png"></a>
     </div>
-    <a class="item active" href="{{ url('/') }}">
+    <a class="item active menu-home" href="{{ url('/') }}">
         Home
     </a>
 
     @if (Auth::guest())
-        <a class="item" href="/about">Sobre</a>
+        <a class="item menu-about" href="/about">Sobre</a>
     @else
-        <a class="item" href="{{route('post.create')}}">
+        <a class="item menu-new-post" href="{{route('post.create')}}">
             +Post
-        </a>
-        <a class="item">
-            Posts
         </a>
     @endif
     <div class="right menu">
         @if (Auth::guest())
-            <a class="item" href="{{url('/login')}}">Login</a>
-            <a class="item" href="{{url('/register')}}">Registrar</a>
+            <a class="item menu-login" href="{{url('/login')}}">Login</a>
         @else
             <div class="ui right dropdown item">
                 {{ Auth::user()->name }}
@@ -32,8 +28,6 @@
                             Logout
                         </a>
                     </div>
-                    <div class="item">International Students</div>
-                    <div class="item">Scholarships</div>
                 </div>
             </div>
             <div class="item">

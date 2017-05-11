@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'DieWebDev - Login')
+
 @section('content')
 <style type="text/css">
     div.login-form {
@@ -51,4 +53,8 @@
     </div>
 </div>
 </div>
+@endsection
+
+@section('js-complement')
+    @include('layouts.menu-update', ['menu' => 'login'])
 @endsection

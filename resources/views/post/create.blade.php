@@ -1,4 +1,7 @@
 @extends('layouts.app')
+
+@section('title', 'DieWebDev - Novo Post')
+
 @section('content')
     @if (!empty($post))
     <form class="ui form" method="POST" action="{{route('post.store', $post)}}">

@@ -21,6 +21,7 @@ Route::post('/logout', 'Auth\LoginController@logout')->name('logout');
 
 Route::get('/', 'PostController@index');
 Route::get('/posts/category/{category_name}', 'PostController@index')->name('posts.category');
+Route::get('/posts/{slug}', 'PostController@show')->name('post.show');
 Route::get('/about', function() {
     return view('about');
 });

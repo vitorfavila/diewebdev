@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'DieWebDev - O blog do Desenvolvedor Web') }}</title>
+    <title>@yield('title')</title>
     <meta name=”keywords” content=”blog, programação, programacao, web, php, laravel, laravel 5, css, framework, mvc, eloquent” >
     <meta name="description" content="Blog do Desenvolvedor WEB">
 
@@ -97,5 +97,7 @@
     <script type="text/javascript">
         $('.ui.checkbox').checkbox();
     </script>
+
+    @yield('js-complement')
 </body>
 </html>
